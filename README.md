@@ -9,7 +9,7 @@
 ![](img/U mode3.png)  
 ・U mode4 
 ![](img/U mode4.png) 
-・mode energy 
+・mode energy  
 ![](img/ModeEnergy.png) 
 
 
