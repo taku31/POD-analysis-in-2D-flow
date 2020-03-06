@@ -1,7 +1,7 @@
 ## POD (Proper Orthogonal Decomposition) analysis-in-2D-flow
 
 ## demo
-・U mode1  
+・U mode1
 ![](img/U mode1.png)  
 ・U mode2
 ![](img/U mode2.png)  
