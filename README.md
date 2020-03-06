@@ -4,7 +4,7 @@
 ・U mode1  
 ![](img/U mode1.png)  
 ・U mode2
-![](img/U mode3.png)  
+![](img/U mode2.png)  
 ・U mode3
 ![](img/U mode3.png)  
 ・U mode4
