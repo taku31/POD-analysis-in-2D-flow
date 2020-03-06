@@ -1,25 +1,20 @@
-## Solving 2D navier stokes equation with SMAC method
-
-・grid type : staggered grid  
-・soliving type : smac method  
-・discretization method：finite-difference methods 
+## POD (Proper Orthogonal Decomposition) analysis-in-2D-flow
 
 ## demo
-・Velocity u  
-![](img/u.gif)  
-・Velocity v  
-![](img/v.gif)  
-・Pressure  
-![](img/p.gif)  
-・Vorticity  
-![](img/vorticity.gif)  
-・Velocity vector  
-![](img/vec.gif)  
-・Particle  
-![](img/particle.gif)  
+・U mode1  
+![](img/U mode1.png)  
+・U mode2
+![](img/U mode3.png)  
+・U mode3
+![](img/U mode3.png)  
+・U mode4
+![](img/U mode4.png)
+・mode energy
+![](img/ModeEnergy.png)
+
 
 ## Reference
-河村哲也 (2014) 『流体解析の基礎』，朝倉書店．
+平 邦彦 (2011) 『固有直交分解による流体解析1. 基礎』，ながれ30 115－123．
 
 ## Author
 T.Nakabayashi
