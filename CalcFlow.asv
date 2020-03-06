@@ -9,7 +9,7 @@ clear all;
 global dt ddt nx ny dx dy ddx ddx2 ddy ddy2 re
 
 % パラメーター
-n = 80;% 格子数
+n = 60;% 格子数
 nx = 2 * n;% x方向格子数
 ny = 1 * n;% % ｙ方向格子数
 loop = 8000;% ステップ数
@@ -64,7 +64,7 @@ ve = 0;% 流出口
 % 障害物位置の定義
 object = zeros(nx + 2, ny + 2);% 圧力格子ベースで障害物を定義する。
 center = round([(nx + 2) / 5, (ny + 2) / 2]);% 中心節点番号。整数指定しないと、非対称になる。
-r = 6;% 半径（節点個数単位）
+r = 10;% 半径（節点個数単位）
 object = DefineObjectArea(object, center, r);
 
 % 粒子位置の生成
@@ -143,8 +143,8 @@ for ita = 1 : loop
     p_snap(:, :, ita) = pp;
     
     % 結果の描画
-    vis_contour('u.gif', ita, uu, 0, 1.5, 1)
-    vis_contour('v.gif', ita, vv, -0.5, 0.5, 2)
+    %vis_contour('u.gif', ita, uu, 0, 1.5, 1)
+    %vis_contour('v.gif', ita, vv, -0.5, 0.5, 2)
     %vis_contour('p.gif', ita, pp, -0.5, 0.5, 3)
     %vis_contour('vorticity.gif', ita, omega2, -2.5, 2.5, 4)
     %vis_contour('div.gif', ita, divup, -0.0001, 0.0001, 5)
@@ -170,6 +170,7 @@ title(['time = ', num2str(timestep * dt, '%.3f')]);
 set(gca, 'FontName', 'Times New Roman', 'FontSize', 16);
 axis equal; axis tight; axis on;
 colorbar('southoutside')
+
 caxis([maxrange minrange])
 frame = getframe(fignum);
 im = frame2im(frame);
